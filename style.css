@@ -44,7 +44,7 @@ body {
 }
 
 .btn-info {
-    background-color: #8B4513; /* Marron */
+    background-color: #916654; /* Marron */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -75,7 +75,7 @@ body {
 }
 
 .icon:hover {
-    background-color: #8B4513;
+    background-color: #916654;
     color: white;
     border-radius: 15px;
 }
@@ -101,7 +101,6 @@ body {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: 3px solid #8B4513; /* Bordure marron autour de l'image ronde */
     margin-right: 20px; /* Espacement entre l'image et le texte */
 }
 
@@ -126,7 +125,7 @@ body {
 }
 
 .rectangle {
-    background-color: #8B4513; /* Marron */
+    background-color: #916654; /* Marron */
     color: white;
     width: 30%;
     padding: 20px;
@@ -169,7 +168,7 @@ body {
 
 .texte-image .texte-gauche h3 {
     font-size: 20px;
-    color: #8B4513;
+    color: #916654;
     margin-bottom: 10px;
 }
 
@@ -302,7 +301,7 @@ body {
 .contact-header h2 {
     font-size: 36px;
     text-transform: uppercase;
-    color: #8B4513; /* Marron */
+    color: #916654; /* Marron */
 }
 
 /* Style du formulaire de contact */
@@ -334,7 +333,7 @@ body {
 }
 
 .contact-field input:focus {
-    border-color: #8B4513; /* Bordure marron au focus */
+    border-color: #916654; /* Bordure marron au focus */
     outline: none;
 }
 
@@ -348,7 +347,7 @@ body {
     padding: 12px 25px;
     font-size: 18px;
     color: white;
-    background-color: #8B4513; /* Marron */
+    background-color: #916654; /* Marron */
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -362,7 +361,7 @@ body {
 .contact-details {
     width: 100%;
     padding: 40px 0;
-    background-color: #8B4513; /* Couleur marron du rectangle */
+    background-color: #916654; /* Couleur marron du rectangle */
 }
 
 /* Rectangle marron */
@@ -454,7 +453,7 @@ body {
 
 /* Style pour l'image en arrière-plan */
 .background-image {
-    background-image: url('arriereplan.png'); /* Chemin de l'image */
+    background-image: url('images/arriereplan.png'); /* Chemin de l'image */
     background-size: cover; /* Couvre toute la largeur sans déformer */
     background-position: center; /* Centre l'image horizontalement */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
@@ -472,3 +471,108 @@ body {
     padding: 20px;
     text-align: center;
 }
+
+/* Styles généraux */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Couleur de fond optionnelle */
+    font-family: Arial, sans-serif; /* Police générale */
+ }
+ 
+ /* Style du rectangle marron */
+ .rectangle1 {
+    background-color: #916654; /* Couleur marron */
+    height: 170px; /* Hauteur fixe */
+    width: 100%; /* Largeur pleine page */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0; /* Pas de bords arrondis */
+ }
+ 
+ /* Ligne blanche */
+ .ligne-blanche {
+    position: absolute;
+    top: 50%; /* Placement vertical au milieu */
+    left: 5%; /* Marges latérales */
+    right: 5%;
+    height: 2px; /* Épaisseur de la ligne */
+    background-color: #ffffff; /* Couleur blanche */
+    transform: translateY(-50%); /* Centrage exact */
+ }
+ 
+ /* Texte à gauche : CONTACT */
+ .texte-contact {
+    position: absolute;
+    top: 30%; /* Légèrement au-dessus de la ligne */
+    left: 10%; /* Positionné à gauche */
+    color: #ffffff; /* Couleur blanche */
+    font-size: 16px; /* Taille par défaut */
+    font-weight: bold; /* Texte en gras */
+ }
+ 
+ /* Infos à gauche */
+ .infos-contact {
+    position: absolute;
+    top: 60%; /* Sous la ligne blanche */
+    left: 10%; /* Aligné avec "CONTACT" */
+    color: #ffffff; /* Couleur blanche */
+    font-size: 14px; /* Taille par défaut */
+    line-height: 1.5; /* Espacement entre les lignes */
+ }
+ 
+ /* Texte à droite : LOCALISATION */
+ .texte-localisation {
+    position: absolute;
+    top: 30%; /* Légèrement au-dessus de la ligne */
+    right: 10%; /* Positionné à droite */
+    color: #ffffff; /* Couleur blanche */
+    font-size: 16px; /* Taille par défaut */
+    font-weight: bold; /* Texte en gras */
+ }
+ 
+ /* Infos à droite */
+ .infos-localisation {
+    position: absolute;
+    top: 60%; /* Sous la ligne blanche */
+    right: 10%; /* Aligné avec "LOCALISATION" */
+    color: #ffffff; /* Couleur blanche */
+    font-size: 14px; /* Taille par défaut */
+    line-height: 1.5; /* Espacement entre les lignes */
+    text-align: right; /* Texte aligné à droite */
+ }
+ 
+ /* Rendre le design responsive */
+ @media (max-width: 768px) {
+    .rectangle {
+        height: 180px; /* Augmenter la hauteur pour les petits écrans */
+    }
+    .texte-contact, .texte-localisation {
+        font-size: 14px; /* Réduire la taille des textes */
+    }
+    .infos-contact, .infos-localisation {
+        font-size: 12px; /* Texte plus petit */
+    }
+    .ligne-blanche {
+        left: 10%; /* Réduire les marges */
+        right: 10%;
+    }
+ }
+ 
+ @media (max-width: 480px) {
+    .rectangle {
+        height: 200px; /* Hauteur encore plus grande */
+    }
+    .texte-contact, .texte-localisation {
+        font-size: 12px; /* Réduire encore la taille des textes */
+    }
+    .infos-contact, .infos-localisation {
+        font-size: 10px; /* Texte plus petit */
+    }
+    .ligne-blanche {
+        left: 15%; /* Marges ajustées */
+        right: 15%;
+    }
+ }
