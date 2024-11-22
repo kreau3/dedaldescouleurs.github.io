@@ -1,4 +1,4 @@
-/* Style général */
+/* Style gÃ©nÃ©ral */
 * {
     margin: 0;
     padding: 0;
@@ -54,10 +54,10 @@ body {
 }
 
 .btn-info:hover {
-    background-color: #5e2c1b; /* Couleur plus foncée au survol */
+    background-color: #5e2c1b; /* Couleur plus foncÃ©e au survol */
 }
 
-/* Options à droite */
+/* Options Ã  droite */
 .options {
     position: absolute;
     top: 20px;
@@ -84,7 +84,7 @@ body {
 .contenu {
     padding: 20px;
 }
-/* Section info : image ronde à gauche et texte à droite */
+/* Section info : image ronde Ã  gauche et texte Ã  droite */
 .section-info {
     display: flex;
     justify-content: flex-start;
@@ -106,7 +106,7 @@ body {
 
 .texte-droit h2 {
     font-size: 24px;
-    color: #333;
+    color: #916654;
     margin-bottom: 10px;
 }
 
@@ -116,7 +116,7 @@ body {
     line-height: 1.5;
 }
 
-/* Trois rectangles marron alignés */
+/* Trois rectangles marron alignÃ©s */
 .rectangles {
     display: flex;
     justify-content: space-between;
@@ -138,6 +138,11 @@ body {
     margin-bottom: 10px;
 }
 
+.rectangle span{
+
+    color: yellow;
+}
+
 .rectangle p {
     font-size: 14px;
     line-height: 1.5;
@@ -145,9 +150,9 @@ body {
 
 /* Effet au survol des rectangles */
 .rectangle:hover {
-    background-color: #5e2c1b; /* Couleur plus foncée au survol */
+    background-color: #5e2c1b; /* Couleur plus foncÃ©e au survol */
 }
-/* Nouvelle section : Texte à gauche avec image à droite */
+/* Nouvelle section : Texte Ã  gauche avec image Ã  droite */
 .texte-image {
     display: flex;
     justify-content: space-between;
@@ -159,29 +164,33 @@ body {
 .texte-image .texte-gauche {
     width: 45%;
     padding-right: 20px;
+    margin-bottom: 200px;
 }
 
 .texte-image .texte-gauche h2 {
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .texte-image .texte-gauche h3 {
     font-size: 20px;
     color: #916654;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .texte-image .texte-gauche p {
     font-size: 16px;
     color: #666;
     line-height: 1.5;
+
 }
 
 .texte-image .image-droit img {
     width: 55%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 18px;
+    
+
 }
 
 /* Effet au survol des images */
@@ -213,7 +222,7 @@ body {
         font-size: 18px;
     }
 }
-/* Nouvelle section : Image à gauche avec texte à droite (inversée) */
+/* Nouvelle section : Image Ã  gauche avec texte Ã  droite (inversÃ©e) */
 .image-texte-inverse {
     display: flex;
     justify-content: space-between;
@@ -232,7 +241,7 @@ body {
     border-radius: 8px;
 }
 
-/* Texte à droite */
+/* Texte Ã  droite */
 .image-texte-inverse .texte-droit {
     width: 45%;
     padding-left: 20px;
@@ -261,7 +270,7 @@ body {
     transition: opacity 0.3s ease;
 }
 
-/* Responsivité pour les écrans plus petits */
+/* ResponsivitÃ© pour les Ã©crans plus petits */
 @media (max-width: 768px) {
     .image-texte-inverse {
         flex-direction: column;
@@ -355,9 +364,9 @@ body {
 }
 
 .contact-submit button:hover {
-    background-color: #6f3f25; /* Marron plus foncé au survol */
+    background-color: #6f3f25; /* Marron plus foncÃ© au survol */
 }
-/* Section des détails de contact */
+/* Section des dÃ©tails de contact */
 .contact-details {
     width: 100%;
     padding: 40px 0;
@@ -374,7 +383,7 @@ body {
     position: relative;
 }
 
-/* Logos en haut à gauche */
+/* Logos en haut Ã  gauche */
 .logos {
     display: flex;
     gap: 20px;
@@ -405,7 +414,7 @@ body {
     z-index: 1;
 }
 
-/* Contenu à gauche de la ligne (CONTACT) */
+/* Contenu Ã  gauche de la ligne (CONTACT) */
 .contact-text-left {
     position: relative;
     z-index: 2; /* S'assurer que le texte est au-dessus de la ligne */
@@ -423,7 +432,7 @@ body {
     margin: 5px 0;
 }
 
-/* Contenu à droite de la ligne (LOCALISATION) */
+/* Contenu Ã  droite de la ligne (LOCALISATION) */
 .contact-text-right {
     position: relative;
     z-index: 2;
@@ -443,7 +452,7 @@ body {
     margin: 0px 0;
 }
 
-/* Logo circulaire à droite */
+/* Logo circulaire Ã  droite */
 .circle-logo img {
     width: 40px; /* Ajustez la taille du logo circulaire */
     height: auto;
@@ -451,18 +460,18 @@ body {
     margin-top: 10px;
 }
 
-/* Style pour l'image en arrière-plan */
+/* Style pour l'image en arriÃ¨re-plan */
 .background-image {
     background-image: url('images/arriereplan.png'); /* Chemin de l'image */
-    background-size: cover; /* Couvre toute la largeur sans déformer */
+    background-size: cover; /* Couvre toute la largeur sans dÃ©former */
     background-position: center; /* Centre l'image horizontalement */
-    background-repeat: no-repeat; /* Empêche la répétition de l'image */
-    width: 100vw; /* Largeur de la fenêtre */
+    background-repeat: no-repeat; /* EmpÃªche la rÃ©pÃ©tition de l'image */
+    width: 100vw; /* Largeur de la fenÃªtre */
     height: 360px; /* Hauteur de la zone (ajustez selon vos besoins) */
     position: absolute; /* Place l'image en haut de la page */
     top: 0;
     left: 0;
-    z-index: -1; /* Place l'image en arrière-plan */
+    z-index: -1; /* Place l'image en arriÃ¨re-plan */
 }
 
 /* Styles pour le contenu */
@@ -472,12 +481,12 @@ body {
     text-align: center;
 }
 
-/* Styles généraux */
+/* Styles gÃ©nÃ©raux */
 body {
     margin: 0;
     padding: 0;
     background-color: #f5f5f5; /* Couleur de fond optionnelle */
-    font-family: Arial, sans-serif; /* Police générale */
+    font-family: Arial, sans-serif; /* Police gÃ©nÃ©rale */
  }
  
  /* Style du rectangle marron */
@@ -496,67 +505,67 @@ body {
  .ligne-blanche {
     position: absolute;
     top: 50%; /* Placement vertical au milieu */
-    left: 5%; /* Marges latérales */
+    left: 5%; /* Marges latÃ©rales */
     right: 5%;
-    height: 2px; /* Épaisseur de la ligne */
+    height: 2px; /* Ã‰paisseur de la ligne */
     background-color: #ffffff; /* Couleur blanche */
     transform: translateY(-50%); /* Centrage exact */
  }
  
- /* Texte à gauche : CONTACT */
+ /* Texte Ã  gauche : CONTACT */
  .texte-contact {
     position: absolute;
-    top: 30%; /* Légèrement au-dessus de la ligne */
-    left: 10%; /* Positionné à gauche */
+    top: 30%; /* LÃ©gÃ¨rement au-dessus de la ligne */
+    left: 10%; /* PositionnÃ© Ã  gauche */
     color: #ffffff; /* Couleur blanche */
-    font-size: 16px; /* Taille par défaut */
+    font-size: 16px; /* Taille par dÃ©faut */
     font-weight: bold; /* Texte en gras */
  }
  
- /* Infos à gauche */
+ /* Infos Ã  gauche */
  .infos-contact {
     position: absolute;
     top: 60%; /* Sous la ligne blanche */
-    left: 10%; /* Aligné avec "CONTACT" */
+    left: 10%; /* AlignÃ© avec "CONTACT" */
     color: #ffffff; /* Couleur blanche */
-    font-size: 14px; /* Taille par défaut */
+    font-size: 14px; /* Taille par dÃ©faut */
     line-height: 1.5; /* Espacement entre les lignes */
  }
  
- /* Texte à droite : LOCALISATION */
+ /* Texte Ã  droite : LOCALISATION */
  .texte-localisation {
     position: absolute;
-    top: 30%; /* Légèrement au-dessus de la ligne */
-    right: 10%; /* Positionné à droite */
+    top: 30%; /* LÃ©gÃ¨rement au-dessus de la ligne */
+    right: 10%; /* PositionnÃ© Ã  droite */
     color: #ffffff; /* Couleur blanche */
-    font-size: 16px; /* Taille par défaut */
+    font-size: 16px; /* Taille par dÃ©faut */
     font-weight: bold; /* Texte en gras */
  }
  
- /* Infos à droite */
+ /* Infos Ã  droite */
  .infos-localisation {
     position: absolute;
     top: 60%; /* Sous la ligne blanche */
-    right: 10%; /* Aligné avec "LOCALISATION" */
+    right: 10%; /* AlignÃ© avec "LOCALISATION" */
     color: #ffffff; /* Couleur blanche */
-    font-size: 14px; /* Taille par défaut */
+    font-size: 14px; /* Taille par dÃ©faut */
     line-height: 1.5; /* Espacement entre les lignes */
-    text-align: right; /* Texte aligné à droite */
+    text-align: right; /* Texte alignÃ© Ã  droite */
  }
  
  /* Rendre le design responsive */
  @media (max-width: 768px) {
     .rectangle {
-        height: 180px; /* Augmenter la hauteur pour les petits écrans */
+        height: 180px; /* Augmenter la hauteur pour les petits Ã©crans */
     }
     .texte-contact, .texte-localisation {
-        font-size: 14px; /* Réduire la taille des textes */
+        font-size: 14px; /* RÃ©duire la taille des textes */
     }
     .infos-contact, .infos-localisation {
         font-size: 12px; /* Texte plus petit */
     }
     .ligne-blanche {
-        left: 10%; /* Réduire les marges */
+        left: 10%; /* RÃ©duire les marges */
         right: 10%;
     }
  }
@@ -566,13 +575,13 @@ body {
         height: 200px; /* Hauteur encore plus grande */
     }
     .texte-contact, .texte-localisation {
-        font-size: 12px; /* Réduire encore la taille des textes */
+        font-size: 12px; /* RÃ©duire encore la taille des textes */
     }
     .infos-contact, .infos-localisation {
         font-size: 10px; /* Texte plus petit */
     }
     .ligne-blanche {
-        left: 15%; /* Marges ajustées */
+        left: 15%; /* Marges ajustÃ©es */
         right: 15%;
     }
  }
