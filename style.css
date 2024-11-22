@@ -476,10 +476,11 @@ body {
 
 /* Styles pour le contenu */
 .content {
-    position: relative
+    position: relative;
     padding: 20px;
     text-align: center;
 }
+
 
 /* Styles gÃ©nÃ©raux */
 body {
