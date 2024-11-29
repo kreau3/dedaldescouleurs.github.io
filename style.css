@@ -224,13 +224,15 @@
 }
 
 .image-texte-inverse .image-gauche {
-    width: 55%;
+    width: 40%;
+    margin-left: 70px;
+
 }
 
 .image-texte-inverse .image-gauche img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+  
 }
 
 /* Texte Ã  droite */
