@@ -153,43 +153,37 @@
     margin-bottom: 40px;
 }
 
-.texte-image .texte-gauche {
-    width: 45%;
-    padding-right: 20px;
-    margin-bottom: 200px;
-}
+
 
 .texte-image .texte-gauche h2 {
     font-size: 24px;
     margin-bottom: 20px;
     color: #916654;
+    margin-left: 30px;
 }
 
 .texte-image .texte-gauche h3 {
     font-size: 20px;
     margin-bottom: 20px;
+    margin-left: 30px;
 }
 
 .texte-image .texte-gauche p {
     font-size: 16px;
     color: #666;
     line-height: 1.5;
+    margin-left: 30px;
 
 }
 
+
 .texte-image .image-droit img {
     width: 75%;
-    border-right: 30px
-   
+    border-right: 30px;
     
 
 }
 
-/* Effet au survol des images */
-.texte-image .image-droit img:hover {
-    opacity: 0.9;
-    transition: opacity 0.3s ease;
-}
 
 @media (max-width: 768px) {
     .texte-image {
@@ -201,11 +195,7 @@
         width: 100%;
     }
 
-    .texte-image .image-droit img {
-        width: 100%;
-        margin-top: 20px;
-    }
-
+  
     .texte-image .texte-gauche h2 {
         font-size: 22px;
     }
@@ -232,7 +222,7 @@
 .image-texte-inverse .image-gauche img {
     width: 100%;
     height: auto;
-  
+    
 }
 
 /* Texte Ã  droite */
@@ -593,4 +583,5 @@ body {
 .icon:hover {
     color: #ffffff; /* Couleur marron foncé */
     border-bottom: 2px solid #916654 
+}
 }
