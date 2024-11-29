@@ -576,3 +576,19 @@ body {
         right: 15%;
     }
  }
+ html {
+    scroll-behavior: smooth;
+}
+.icon {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #ffffff; /* Couleur marron */
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.icon:hover {
+    color: #ffffff; /* Couleur marron foncé */
+    border-bottom: 2px solid #916654 
+}
