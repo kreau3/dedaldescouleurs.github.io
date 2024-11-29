@@ -178,9 +178,9 @@
 }
 
 .texte-image .image-droit img {
-    width: 55%;
-    height: auto;
-    border-radius: 18px;
+    width: 75%;
+    border-right: 30px
+   
     
 
 }
