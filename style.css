@@ -123,8 +123,9 @@
 .rectangle {
     background-color: #916654; /* Marron */
     color: white;
-    width: 30%;
+    width: 20%;
     padding: 20px;
+    margin: 0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -159,12 +160,14 @@
 
 
 
-.texte-image .texte-gauche h2 {
+.texte-gauche {
     font-size: 40px;
     margin-bottom: 20px;
     color: #916654;
     margin-left: 30px;
     font-family: "Koulen", sans-serif;
+    position: relative;
+    margin-top: -50px;
 }
 
 .texte-image .texte-gauche h3 {
@@ -174,9 +177,9 @@
     font-family: "Koulen", sans-serif;
 }
 
-.texte-image .texte-gauche p {
+.texte-gauche p {
     font-size: 16px;
-    color: #666;
+    color: #000000;
     line-height: 1.5;
     margin-left: 30px;
     font-family: "Koulen", sans-serif;
@@ -627,4 +630,4 @@ body {
     .rectangle {
         width: 100%;
         margin-bottom: 20px;
-    }
+    }  
