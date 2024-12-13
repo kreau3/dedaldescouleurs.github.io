@@ -1,4 +1,3 @@
-/* Style gÃ©nÃ©ral */
 * {
     margin: 0;
     padding: 0;
@@ -97,19 +96,16 @@
 }
 
 .texte-droit h2 {
-    font-size: 30px;
-    font-family: "Koulen", sans-serif;
+    font-size: 24px;
     color: #916654;
     margin-bottom: 10px;
-    
+
 }
 
 .texte-droit p {
     font-size: 16px;
-    font-family: "Koulen", sans-serif;
-    max-width: 800px; /* Fixe une largeur maximale */
-    margin: 0 auto; /* Centre le texte si nécessaire */
-    text-align: left; /* Alignement à gauche */
+    color: #666;
+    line-height: 1.5;
 }
 
 /* Trois rectangles marron alignÃ©s */
@@ -123,9 +119,8 @@
 .rectangle {
     background-color: #916654; /* Marron */
     color: white;
-    width: 20%;
+    width: 30%;
     padding: 20px;
-    margin: 0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -160,29 +155,25 @@
 
 
 
-.texte-gauche {
-    font-size: 40px;
+.texte-image .texte-gauche h2 {
+    font-size: 24px;
     margin-bottom: 20px;
     color: #916654;
     margin-left: 30px;
-    font-family: "Koulen", sans-serif;
-    position: relative;
-    margin-top: -50px;
 }
 
 .texte-image .texte-gauche h3 {
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 20px;
     margin-left: 30px;
-    font-family: "Koulen", sans-serif;
 }
 
-.texte-gauche p {
+.texte-image .texte-gauche p {
     font-size: 16px;
-    color: #000000;
+    color: #666;
     line-height: 1.5;
     margin-left: 30px;
-    font-family: "Koulen", sans-serif;
+
 }
 
 
@@ -190,6 +181,7 @@
     width: 75%;
     border-right: 30px;
     
+
 }
 
 
@@ -242,19 +234,17 @@
 .image-texte-inverse .texte-droit h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    font-family: "Koulen", sans-serif;
 }
 
 .image-texte-inverse .texte-droit h3 {
     font-size: 20px;
     margin-bottom: 10px;
-    font-family: "Koulen", sans-serif;
 }
 
 .image-texte-inverse .texte-droit p {
     font-size: 16px;
+    color: #666;
     line-height: 1.5;
-    font-family: "Koulen", sans-serif;
 }
 
 /* Effet au survol des images */
@@ -275,7 +265,7 @@
     }
 
     .image-texte-inverse .image-gauche img {
-        width: 100%;
+        width: 75%;
         margin-bottom: 20px;
     }
 
@@ -286,6 +276,7 @@
     .image-texte-inverse .texte-droit h3 {
         font-size: 18px;
     }
+
 }
 
 /* Section "Nous contacter" */
@@ -405,6 +396,7 @@
     height: 2px;
     background-color: white; /* Ligne blanche */
     z-index: 1;
+
 }
 
 /* Contenu Ã  gauche de la ligne (CONTACT) */
@@ -498,8 +490,8 @@ body {
  .ligne-blanche {
     position: absolute;
     top: 50%; /* Placement vertical au milieu */
-    left: 5%; /* Marges latÃ©rales */
-    right: 5%;
+    left: 10%; /* Marges latÃ©rales */
+    right: 10%;
     height: 2px; /* Ã‰paisseur de la ligne */
     background-color: #ffffff; /* Couleur blanche */
     transform: translateY(-50%); /* Centrage exact */
@@ -509,7 +501,7 @@ body {
  .texte-contact {
     position: absolute;
     top: 30%; /* LÃ©gÃ¨rement au-dessus de la ligne */
-    left: 10%; /* PositionnÃ© Ã  gauche */
+    left: 30%; /* PositionnÃ© Ã  gauche */
     color: #ffffff; /* Couleur blanche */
     font-size: 16px; /* Taille par dÃ©faut */
     font-weight: bold; /* Texte en gras */
@@ -519,7 +511,7 @@ body {
  .infos-contact {
     position: absolute;
     top: 60%; /* Sous la ligne blanche */
-    left: 10%; /* AlignÃ© avec "CONTACT" */
+    left: 30%; /* AlignÃ© avec "CONTACT" */
     color: #ffffff; /* Couleur blanche */
     font-size: 14px; /* Taille par dÃ©faut */
     line-height: 1.5; /* Espacement entre les lignes */
@@ -529,7 +521,7 @@ body {
  .texte-localisation {
     position: absolute;
     top: 30%; /* LÃ©gÃ¨rement au-dessus de la ligne */
-    right: 10%; /* PositionnÃ© Ã  droite */
+    right: 34.5%; /* PositionnÃ© Ã  droite */
     color: #ffffff; /* Couleur blanche */
     font-size: 16px; /* Taille par dÃ©faut */
     font-weight: bold; /* Texte en gras */
@@ -539,28 +531,208 @@ body {
  .infos-localisation {
     position: absolute;
     top: 60%; /* Sous la ligne blanche */
-    right: 10%; /* AlignÃ© avec "LOCALISATION" */
+    right: 30%; /* AlignÃ© avec "LOCALISATION" */
     color: #ffffff; /* Couleur blanche */
     font-size: 14px; /* Taille par dÃ©faut */
     line-height: 1.5; /* Espacement entre les lignes */
-    text-align: right; /* Texte alignÃ© Ã  droite */
+    
  }
+  .photo-cercle-down img {
+    position: absolute;
+ width: 100px;
+    height: 100px;
+    border-radius: 90%;
+    margin-left: 91%;
+    margin-bottom: 50px;
+    margin-top: -140px;
+
+ }
+
+ .logo-instagram img{
+ position: absolute;
+ width: 50px;
+    height: 50px;
+    border-radius: 90%;
+    margin-left: 1%;
+    margin-bottom: 60px;
+    margin-top: -140px;
+
+ }
+
+ .logo-facebook img{
+    position: absolute;
+ width: 50px;
+    height: 50px;
+    border-radius: 90%;
+    margin-left: 4%;
+    margin-bottom: 60px;
+    margin-top: -140px;
+
+
+ }
+
  
  /* Rendre le design responsive */
  @media (max-width: 768px) {
-    .rectangle {
-        height: 180px; /* Augmenter la hauteur pour les petits Ã©crans */
+
+      .photo-cercle-down img {
+    position: absolute;
+ width: 50px;
+    height: 50px;
+    border-radius: 90%;
+    margin-left: 87%;
+    margin-bottom: 50px;
+    margin-top: -110px;
+
+ }
+
+
+    .rectangle1 {
+
+        width: 100%; 
+
+
+
     }
+
+     .image-texte {
+        flex-direction: column; /* Change la direction en colonne pour empiler l'image et le texte */
+        align-items: center; /* Centre l'image et le texte */
+    }
+    
+  
+    .image-gauche1 img {
+        width: 60%; /* Ajuste la taille de l'image pour qu'elle ne soit pas trop grande */
+        height: 150px;
+        margin-bottom: 20px; /* Espace entre l'image et le texte */
+        margin-left: 40px;
+    }
+
+    .texte-droit {
+        text-align: center; /* Centre le texte sous l'image */
+        width: 40%; /* Ajuste la largeur du texte pour qu'il s'adapte à l'écran */
+    }
+
+    .texte-droit h2 {
+        font-size: 22px; /* Ajuste la taille de la police pour les petits écrans */
+    }
+
+    .texte-droit p {
+        font-size: 16px; /* Ajuste la taille du texte */
+    }
+
+
+    .rectangles{
+        display: flex;
+    flex-wrap: wrap; /* Pour s'assurer que les éléments peuvent se réorganiser */
+    gap: 30px;
+    flex-direction: column; /* Empile verticalement */
+        align-items: center;
+    }
+    .rectangle {
+        height: 200px;
+         width: 200px;
+    
+    background-color: #916654;
+    width: 50%; /* Augmenter la hauteur pour les petits Ã©crans */
+      }
+
+   .texte-gauche {
+        text-align: center; /* Centre le texte horizontalement */
+        margin: 0 auto; /* Centrage horizontal (utile pour les blocs si besoin) */
+        width: 100%; /* S'assure que l'élément prend toute la largeur disponible */
+  
+    }
+
+    .image-droit img{
+
+
+        margin-left: 55px;
+    }
+
+    .image-gauche img{
+         height: 20%;
+         width: 20%; /* Réduit la largeur de l'image (ajustez selon vos besoins) */
+        margin: 0 auto; /* Centre horizontalement */
+        align-items: center;
+        margin-left: -10px;
+    }
+
+    .contact-header h2{
+
+        text-align: center;
+    }
+
     .texte-contact, .texte-localisation {
-        font-size: 14px; /* RÃ©duire la taille des textes */
+        font-size: 10px; /* RÃ©duire la taille des textes */
+        margin-left: -20px;
     }
     .infos-contact, .infos-localisation {
-        font-size: 12px; /* Texte plus petit */
+        font-size: 9px;
+        margin-left: -20px /* Texte plus petit */
     }
     .ligne-blanche {
         left: 10%; /* RÃ©duire les marges */
-        right: 10%;
+        right: 15%;
     }
+
+    .image-droit{
+        margin-left: 10px;
+
+
+    }
+
+.logo-instagram i{
+font-size: 35px;
+margin-top: 16px;
+    
+}
+
+.texte-localisation {
+
+    margin-right: -20px;
+
+}
+
+.infos-localisation p{
+
+
+    margin-right: -45px;
+    font-size: 9px;
+}
+
+.logo-facebook i{
+
+
+    margin-left: 20px;
+    font-size: 35px;
+    margin-top: -60px;
+
+}
+
+      
+
+
+    .txt-droit h3{
+        margin-top: -570px;
+
+    }
+
+    .txt-droit p{
+
+        margin-top: 570px;
+
+    }
+
+   .txt-gauche p{
+    position: absolute;
+
+margin-top: 500px;
+
+   }
+
+
+ 
  }
  
  @media (max-width: 480px) {
@@ -595,39 +767,40 @@ body {
     border-bottom: 2px solid #916654 
 }
 
-.photo-cercle-down img {
-    position: absolute;
- width: 100px;
-    height: 100px;
+
+
+ 
+
+ .logo-instagram {
+ position: absolute;
+ width: 500px;
+    height: 500px;
     border-radius: 90%;
-    margin-left: 93%;
+    margin-left: 1%;
     margin-bottom: 60px;
     margin-top: -140px;
+    color:white;
+    font-size: 48px;
+
 
  }
 
-@media (max-width: 768px) {
-    .texte h1 {
-        font-size: 36px; /* Taille de texte plus petite */
-        margin-left: 20px;
-    }
+ .logo-facebook {
+    position: absolute;
+ width: 80%;
+    height: 50px;
+    border-radius: 90%;
+    margin-left: 5%;
+    margin-bottom: 60px;
+    margin-top: -140px;
+    color:white;
+    font-size: 50px;
 
-    .photo-cercle img {
-        width: 80px;
-        height: 80px;
-        margin-left: 0;
-    }
 
-    .btn-info {
-        margin-left: 20px;
-    }
+ }
 
-    .rectangles {
-        flex-direction: column;
-        padding: 20px 10px;
-    }
+ a i {
 
-    .rectangle {
-        width: 100%;
-        margin-bottom: 20px;
-    }  
+color: white;
+
+}
