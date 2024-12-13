@@ -8,13 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="background-image"></div> <!-- Conteneur pour l'image en arrière-plan -->
     <header class="bandeau">
         <div class="info">
             <div class="photo-cercle">
-                <img src="images/logosite.png" alt="Logo">
+                <img src="images/logo site.png" alt="Logo">
             </div>
             <div class="texte">
                 <h1>Nouvelle Exposition</h1>
@@ -25,8 +27,19 @@
         <div class="options">
             <a href="#histoire" class="icon">Histoire</a>
             <a href="#expositions" class="icon">Expositions</a>
-            <a href="#nouscontacter" class="icon">Contact</a>
-        </div>    
+            <a href="#nous contacter" class="icon">Contact</a>
+        </div>
+
+        <!-- Sections correspondantes -->
+        <section id="histoire">
+           
+        
+       
+            
+        </section>
+        
+        
+        
     </header>
 
     <section class="contenu">
@@ -37,9 +50,9 @@
         <!-- Bandeau précédemment défini ici -->
     </header>
 
-    <div class="contenu">
+    <section class="contenu">
         <!-- Contenu sous le bandeau -->
-    </div>
+
         <!-- Première section : Image ronde à gauche et texte à droite -->
         <div class="section-info">
             <div class="image-texte">
@@ -49,10 +62,7 @@
                 <div class="texte-droit">
                     <h2>NOTRE HISTOIRE</h2>
                     <p>
-                        Situee au coeur de Paris, au 10 rue de la Republique, notre galerie d’art vous accueille depuis plus de 30 ans. Nous vous proposons une selection exceptionnelle de peintures signees par des maitres tels que Pascin, Chagall ou Monnet. Un voyage unique a travers des oeuvres intemporelles, reflet de la richesse et de la diversite de l’art.
-                    </p>
-                    <p>
-                        En savoir +
+                        “Située au cœur de Paris, au 10 rue de la République, notre galerie d’art vous accueille depuis plus de 30 ans. Nous vous proposons une sélection exceptionnelle de peintures signées par des maîtres tels que Pascin, Chagall ou Picasso. Un voyage unique à travers des œuvres intemporelles, reflet de la richesse et de la diversité de l’art.”
                     </p>
                 </div>
             </div>
@@ -61,51 +71,54 @@
         <!-- Trois rectangles marron alignés avec sous-titre et texte -->
         <div class="rectangles">
             <div class="rectangle">
-                <h3>ALEXIS P.<br><span>★★★★★</span></h3>
+                <h3>ALEXIS P.<br><span>★★★★★</span></br></h3>
                 <p>"Une galerie d'art fascinante et riche en découvertes"</p>
             </div>
             <div class="rectangle">
-                <h3>LISON M.<br><span>★★★★★</span></h3>
+                <h3>LISON M.<br><span>★★★★★</span></br> </h3>
                 <p>"Un accueil chaleureux avec des oeuvres de qualités"</p>
             </div>
             <div class="rectangle">
-                <h3>SAM G.<br><span>★★★★</span></h3>
+                <h3>SAM G.<br><span>★★★★</span></br></h3>
                 <p>"Une excellente galerie pour trouver l’inspiration"</p>
             </div>
         </div>
     </section> 
     
-    <section id="expositions">
+    <section id="expositions"></section>
      <!-- Nouvelle section : Texte à gauche avec image à droite -->
      <div class="texte-image">
         <div class="texte-gauche">
+            <div class="txt-gauche">
             <h2>L'EXPOSITION</h2>
             <h3>ECLOSION DE COULEURS</h3>
             <p>
-                Un bouquet eclatant de fleurs rouges, roses et jaunes dans un vase bleu, accompagne de fruits et d’une tasse, exprime une vitalite joyeuse et coloree.
+                Un bouquet éclatant de fleurs rouges, roses et jaunes dans un vase bleu, accompagné de fruits et d’une tasse, exprime une vitalité joyeuse et colorée.
             </p>
         </div>
+        </div>
         <div class="image-droit">
-            <img src="images/photo1.png" alt="Image de la section">
+            <img src="images/photo 1.png" alt="Image de la section">
         </div>
     </div>
 </section>
-
-
-
+</body>
  <!-- Nouvelle section : Image à gauche avec texte à droite (inversée) -->
- <section class="image-texte-inverse">
+ <div class="image-texte-inverse">
     <div class="image-gauche">
-        <img src="images/photo2.png" alt="Image de la section">
+        <img src="images/photo 2.png" alt="Image de la section">
     </div>
     <div class="texte-droit">
+        <div class="txt-droit">
         <h3>BOUQUET LUMINEUX</h3>
         <p>
-            Des glaieuls vibrants dans un vase jaune, associes a un pichet en terre cuite et des fruits, invitent a une ambiance chaleureuse et intimiste.
+            Des glaïeuls vibrants dans un vase jaune, associés à un pichet en terre cuite et des fruits, invitent à une ambiance chaleureuse et intimiste.
         </p>
     </div>
+    </div>
+</div>
 </section>
-
+</body>
 
 
 <section class="contact">
@@ -113,7 +126,6 @@
     <div class="contact-header">
         <h2>NOUS CONTACTER</h2>
     </div>
-</section>
 
     <!-- Formulaire de contact -->
     <div class="contact-form">
@@ -135,14 +147,17 @@
             <input type="text" id="objet" name="objet" placeholder="Entrez l'objet de votre message">
         </div>
 
-<div id="nous-contacter">
-        
+<section id="nous contacter">
+
+   
+            
+
         <!-- Bouton Envoyer -->
         <div class="contact-submit">
             <button type="submit">+ Envoyer</button>
         </div>
     </div>
-    </div>
+</section>
 
 <div class="rectangle1">
     <div class="ligne-blanche"></div>
@@ -150,22 +165,38 @@
     <!-- Section gauche : Contact -->
     <div class="texte-contact">CONTACT</div>
     <div class="infos-contact">
-        <p>+33 1 23 45 67 89</p>
-        <p>+33 6 98 76 54 32</p>
-        <p>contact@example.com</p>
+        <p>FAX 01.63.45.78.52</p>
+        <p>TEL 01.63.45.85.56</p>
+        <p>MAIL DEDAL@GMAIL.COM</p>
     </div>
 
     <!-- Section droite : Localisation -->
     <div class="texte-localisation">LOCALISATION</div>
     <div class="infos-localisation">
-        <p>123 Rue Exemple,</p>
-        <p>75000 Paris, France</p>
+        <p>10 RUE DE LA REPUBLIQUE </p>
+        <p>75000 Paris</p>
     </div>
 </div>
+ <div class="photo-cercle-down">
+    
+                <img src="images/logo site.png">
+            
+            </div>   
 
-<div class="photo-cercle-down">
-    <img src="images/logosite.png" alt="Logo">
-</div> 
+    <div class="logo-instagram">
+        <a href="https://www.instagram.com" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+        </div>
+
+    <div class="logo-facebook">
+        <a href="https://www.facebook.com">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+      </div>  
+
+    
+
 
 </body>
 </html>
