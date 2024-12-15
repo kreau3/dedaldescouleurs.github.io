@@ -270,15 +270,12 @@
         margin-bottom: 20px;
     }
 
-    .image-texte-inverse .texte-droit h2 {
-        font-size: 22px;
-    }
-
+   
     .image-texte-inverse .texte-droit h3 {
-        font-size: 18px;
-    }
+        margin-top: -140%;
+        padding: 10%;
 
-}
+    }
 
 /* Section "Nous contacter" */
 .contact {
