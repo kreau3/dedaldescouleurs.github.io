@@ -276,6 +276,18 @@
         padding: 10%;
 
     }
+      .image-texte-inverse .texte-droit h3 {
+        margin-top: -140%;
+        padding: 18%;
+
+    }
+    
+    .texte-image .texte-gauche p {
+        margin-top: 103%;
+        padding: 12%;
+
+    }
+}
 
 /* Section "Nous contacter" */
 .contact {
