@@ -204,10 +204,6 @@
     .texte-image .texte-gauche h3 {
         font-size: 18px;
     }
-
-     .texte-image .texte-gauche p {
-        margin-top: -1px;
-    }
 }
 /* Nouvelle section : Image Ã  gauche avec texte Ã  droite (inversÃ©e) */
 .image-texte-inverse {
@@ -243,7 +239,7 @@
 
 .image-texte-inverse .texte-droit h3 {
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .image-texte-inverse .texte-droit p {
