@@ -270,23 +270,14 @@
         margin-bottom: 20px;
     }
 
-   
+    .image-texte-inverse .texte-droit h2 {
+        font-size: 22px;
+    }
+
     .image-texte-inverse .texte-droit h3 {
-        margin-top: -140%;
-        padding: 10%;
-
+        font-size: 18px;
     }
-      .image-texte-inverse .texte-droit h3 {
-        margin-top: -140%;
-        padding: 18%;
 
-    }
-    
-    .texte-image .texte-gauche p {
-        margin-top: 103%;
-        padding: 12%;
-
-    }
 }
 
 /* Section "Nous contacter" */
@@ -738,24 +729,200 @@ margin-top: 500px;
  }
  
  @media (max-width: 480px) {
-    .rectangle {
-        height: 200px; /* Hauteur encore plus grande */
+
+
+
+     html, body {
+
+  width: 100%; /* Force le contenu à ne pas dépasser la largeur de la fenêtre */
+  overflow-x: hidden; /* Empêche les débordements horizontaux */
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+      .photo-cercle-down img {
+    position: absolute;
+ width: 50px;
+    height: 50px;
+    border-radius: 90%;
+    margin-left: 87%;
+    margin-bottom: 50px;
+    margin-top: -110px;
+
+ }
+   .rectangle1 {
+
+        width: 100%; 
     }
+
+     .image-texte {
+        flex-direction: column; /* Change la direction en colonne pour empiler l'image et le texte */
+        align-items: center; /* Centre l'image et le texte */
+    }
+    
+  
+    .image-gauche1 img {
+        width: 60%; /* Ajuste la taille de l'image pour qu'elle ne soit pas trop grande */
+        height: 150px;
+        margin-bottom: 20px; /* Espace entre l'image et le texte */
+        margin-left: 40px;
+    }
+
+    .texte-droit {
+        text-align: center; /* Centre le texte sous l'image */
+        width: 40%; /* Ajuste la largeur du texte pour qu'il s'adapte à l'écran */
+    }
+
+    .texte-droit h2 {
+        font-size: 22px; /* Ajuste la taille de la police pour les petits écrans */
+    }
+
+    .texte-droit p {
+        font-size: 16px; /* Ajuste la taille du texte */
+    }
+
+
+    .rectangles{
+        display: flex;
+    flex-wrap: wrap; /* Pour s'assurer que les éléments peuvent se réorganiser */
+    gap: 30px;
+    flex-direction: column; /* Empile verticalement */
+        align-items: center;
+    }
+    .rectangle {
+        height: 200px;
+         width: 200px;
+    
+    background-color: #916654;
+    width: 50%; /* Augmenter la hauteur pour les petits Ã©crans */
+      }
+
+   .texte-gauche {
+        text-align: center; /* Centre le texte horizontalement */
+        margin: 0 auto; /* Centrage horizontal (utile pour les blocs si besoin) */
+        width: 100%; /* S'assure que l'élément prend toute la largeur disponible */
+  
+    }
+
+    .image-droit img{
+
+
+        margin-left: 55px;
+    }
+
+    .image-gauche img{
+         height: 20%;
+         width: 20%; /* Réduit la largeur de l'image (ajustez selon vos besoins) */
+        margin: 0 auto; /* Centre horizontalement */
+        align-items: center;
+        margin-left: -10px;
+    }
+
+    .contact-header h2{
+
+        text-align: center;
+    }
+
     .texte-contact, .texte-localisation {
-        font-size: 12px; /* RÃ©duire encore la taille des textes */
+        font-size: 10px; /* RÃ©duire la taille des textes */
+        margin-left: -20px;
     }
     .infos-contact, .infos-localisation {
-        font-size: 10px; /* Texte plus petit */
+        font-size: 9px;
+        margin-left: -20px /* Texte plus petit */
     }
     .ligne-blanche {
-        left: 10%; /* Marges ajustÃ©es */
+        left: 20%; /* RÃ©duire les marges */
         right: 15%;
-        hr {
-  width: 30%; /* Longueur de la ligne, en pourcentage ou pixels */
-  margin: 0 auto; /* Centrer la ligne */
-}
+    }
+
+    .image-droit{
+        margin-left: 10px;
 
     }
+
+.logo-instagram i{
+font-size: 30px;
+margin-top: 10px;
+    
+}
+
+.texte-localisation {
+
+    margin-right: -20px;
+
+}
+
+.infos-localisation p{
+
+
+    margin-right: -45px;
+    font-size: 9px;
+}
+
+.logo-facebook i{
+
+
+    margin-left: 20px;
+    font-size: 30px;
+    margin-top: 10px;
+
+}
+    .txt-droit h3{
+        margin-top: -570px;
+
+    }
+
+    .txt-droit p{
+
+        margin-top: 570px;
+
+    }
+
+   .txt-gauche p{
+    position: absolute;
+
+margin-top: 500px;
+
+   }
+    .texte-image {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .texte-image .texte-gauche, .texte-image .image-droit {
+        width: 100%;
+    }
+
+  
+    .texte-image .texte-gauche h2 {
+        font-size: 22px;
+    }
+
+    .texte-image .texte-gauche h3 {
+        font-size: 18px;
+    }
+.image-texte-inverse {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .image-texte-inverse .image-gauche, .image-texte-inverse .texte-droit {
+        width: 100%;
+    }
+
+    .image-texte-inverse .image-gauche img {
+        width: 75%;
+        margin-bottom: 20px;
+    }
+
+    .image-texte-inverse .texte-droit h2 {
+        font-size: 22px;
+    }
+
+    .image-texte-inverse .texte-droit h3 {
+        font-size: 18px;
+    }
+ 
  }
  html {
     scroll-behavior: smooth;
@@ -801,3 +968,25 @@ margin-top: 500px;
 color: white;
 
 }
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
