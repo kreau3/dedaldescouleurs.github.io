@@ -204,6 +204,10 @@
     .texte-image .texte-gauche h3 {
         font-size: 18px;
     }
+
+     .texte-image .texte-gauche p {
+        margin-top: -10px;
+    }
 }
 /* Nouvelle section : Image Ã  gauche avec texte Ã  droite (inversÃ©e) */
 .image-texte-inverse {
@@ -246,12 +250,6 @@
     font-size: 16px;
     color: #666;
     line-height: 1.5;
-}
-
-/* Effet au survol des images */
-.image-texte-inverse .image-gauche img:hover {
-    opacity: 0.9;
-    transition: opacity 0.3s ease;
 }
 
 /* ResponsivitÃ© pour les Ã©crans plus petits */
