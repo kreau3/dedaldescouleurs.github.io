@@ -741,6 +741,11 @@ margin-top: 500px;
     .ligne-blanche {
         left: 10%; /* Marges ajustÃ©es */
         right: 15%;
+        hr {
+  width: 50%; /* Longueur de la ligne, en pourcentage ou pixels */
+  margin: 0 auto; /* Centrer la ligne */
+}
+
     }
  }
  html {
