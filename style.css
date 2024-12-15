@@ -739,8 +739,8 @@ margin-top: 500px;
         font-size: 10px; /* Texte plus petit */
     }
     .ligne-blanche {
-        left: 20%; /* Marges ajustÃ©es */
-        right: 20%;
+        left: 10%; /* Marges ajustÃ©es */
+        right: 15%;
     }
  }
  html {
