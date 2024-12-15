@@ -1,8 +1,10 @@
+/* Style gÃ©nÃ©ral */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 .texte h1 {
     margin-left: 90px;
@@ -103,26 +105,25 @@
 
 .texte-droit p {
     font-size: 16px;
-    color: black;
+    color: #666;
     line-height: 1.5;
-    font-family: "Koulen", sans-serif;
 }
 
 /* Trois rectangles marron alignÃ©s */
 .rectangles {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 20px;
     padding: 40px 20px;
 }
 
 .rectangle {
     background-color: #916654; /* Marron */
     color: white;
-    width: 25%;
+    width: 30%;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
 
 .rectangle h3 {
@@ -160,36 +161,28 @@
     margin-bottom: 20px;
     color: #916654;
     margin-left: 30px;
-    font-family: "Koulen", sans-serif;
 }
 
 .texte-image .texte-gauche h3 {
     font-size: 20px;
     margin-bottom: 20px;
     margin-left: 30px;
-    font-family: "Koulen", sans-serif;
 }
 
 .texte-image .texte-gauche p {
     font-size: 16px;
-    margin-bottom: 20px;
-    color: black;
+    color: #666;
+    line-height: 1.5;
     margin-left: 30px;
-    max-width: 700px;
-    line-height: 1.4;
-    text-align: justify;
-    font-family: "Koulen", sans-serif;
+
 }
 
-
-.texte-image .image-droit {
-    width: 40%;
-   margin-left: 10px;
-}
 
 .texte-image .image-droit img {
-    width: 100%; /* L'image occupe 100% de son conteneur */
-    height: auto; /* Conserve les proportions */
+    width: 75%;
+    border-right: 30px;
+    
+
 }
 
 
@@ -237,28 +230,29 @@
 .image-texte-inverse .texte-droit {
     width: 45%;
     padding-left: 20px;
-    font-family: "Koulen", sans-serif;
 }
 
 .image-texte-inverse .texte-droit h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    font-family: "Koulen", sans-serif;
 }
 
 .image-texte-inverse .texte-droit h3 {
     font-size: 20px;
     margin-bottom: 10px;
-    font-family: "Koulen", sans-serif;
 }
 
 .image-texte-inverse .texte-droit p {
     font-size: 16px;
-    color: black;
+    color: #666;
     line-height: 1.5;
-    font-family: "Koulen", sans-serif;
 }
 
+/* Effet au survol des images */
+.image-texte-inverse .image-gauche img:hover {
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
 
 /* ResponsivitÃ© pour les Ã©crans plus petits */
 @media (max-width: 768px) {
@@ -575,13 +569,17 @@ body {
     margin-bottom: 60px;
     margin-top: -140px;
 
-
  }
-
- 
  /* Rendre le design responsive */
  @media (max-width: 768px) {
 
+    html, body {
+
+  width: 100%; /* Force le contenu à ne pas dépasser la largeur de la fenêtre */
+  overflow-x: hidden; /* Empêche les débordements horizontaux */
+    overflow-y: auto;
+    box-sizing: border-box;
+}
       .photo-cercle-down img {
     position: absolute;
  width: 50px;
@@ -592,14 +590,9 @@ body {
     margin-top: -110px;
 
  }
-
-
-    .rectangle1 {
+   .rectangle1 {
 
         width: 100%; 
-
-
-
     }
 
      .image-texte {
@@ -679,19 +672,18 @@ body {
         margin-left: -20px /* Texte plus petit */
     }
     .ligne-blanche {
-        left: 10%; /* RÃ©duire les marges */
+        left: 20%; /* RÃ©duire les marges */
         right: 15%;
     }
 
     .image-droit{
         margin-left: 10px;
 
-
     }
 
 .logo-instagram i{
-font-size: 35px;
-margin-top: 16px;
+font-size: 30px;
+margin-top: 10px;
     
 }
 
@@ -712,14 +704,10 @@ margin-top: 16px;
 
 
     margin-left: 20px;
-    font-size: 35px;
-    margin-top: -60px;
+    font-size: 30px;
+    margin-top: 10px;
 
 }
-
-      
-
-
     .txt-droit h3{
         margin-top: -570px;
 
@@ -731,12 +719,12 @@ margin-top: 16px;
 
     }
 
-   .txt-gauche p {
+   .txt-gauche p{
     position: absolute;
-    margin-top: 500px;
-}
 
+margin-top: 500px;
 
+   }
  
  }
  
@@ -751,7 +739,7 @@ margin-top: 16px;
         font-size: 10px; /* Texte plus petit */
     }
     .ligne-blanche {
-        left: 15%; /* Marges ajustÃ©es */
+        left: 10%; /* Marges ajustÃ©es */
         right: 15%;
     }
  }
@@ -772,25 +760,30 @@ margin-top: 16px;
     border-bottom: 2px solid #916654 
 }
 
-  
-.logo-instagram, .logo-facebook {
-    width: 50px; /* Taille de l'icône */
-    height: 50px; /* Taille de l'icône */
-    border-radius: 50%; /* Forme circulaire */
-    color: white; /* Couleur de l'icône (si elles sont des icônes de type font) */
-    font-size: 30px; /* Taille de l'icône à l'intérieur du cercle */
-    display: flex;
-    justify-content: center; /* Centrer l'icône horizontalement */
-    align-items: center; /* Centrer l'icône verticalement */
+ .logo-instagram {
+ position: absolute;
+    border-radius: 90%;
+    margin-left: 1%;
+    margin-bottom: 0px;
+    margin-top: -110px;
+    color:white;
+    font-size: 30px;
+ }
+
+ .logo-facebook {
     position: absolute;
-}
+ width: 80%;
+    height: 50px;
+    border-radius: 90%;
+    margin-left: 5%;
+    margin-bottom: 0px;
+    margin-top: -110px;
+    color:white;
+    font-size: 30px;
+ }
 
-.logo-instagram {
-    margin-left: 4%; /* Décalage vers la droite */
-    margin-top: -100px; /* Décalage vers le haut */
-}
+ a i {
 
-.logo-facebook {
-    margin-left: 7%; /* Décalage vers la droite */
-    margin-top: -100px; /* Décalage vers le haut */
+color: white;
+
 }
