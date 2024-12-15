@@ -815,6 +815,7 @@ margin-top: 500px;
         margin: 0 auto; /* Centre horizontalement */
         align-items: center;
         margin-left: -10px;
+        margin-top: 20px;
     }
 
     .contact-header h2{
@@ -868,13 +869,13 @@ margin-top: 10px;
 
 }
     .txt-droit h3{
-        margin-top: -570px;
+        margin-top: -539px;
 
     }
 
     .txt-droit p{
 
-        margin-top: 570px;
+        margin-top: 510px;
 
     }
 
